@@ -16,6 +16,7 @@ for message in consumer:
     price_data = message.value
     
     # Extraire les valeurs requises
+    #HINT : Aller sur l'url "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo" et examiner les champs des données qu'on veut extraire
     timestamp = price_data['timestamp']
     open_price = #fill_here
     high_price = #fill_here
