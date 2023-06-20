@@ -17,11 +17,11 @@ for message in consumer:
     
     # Extraire les valeurs requises
     timestamp = price_data['timestamp']
-    open_price = price_data['open']
-    high_price = price_data['high']
-    low_price = price_data['low']
-    close_price = price_data['close']
-    volume = price_data['volume']
+    open_price = #fill_here
+    high_price = #fill_here
+    low_price = #fill_here
+    close_price = #fill_here
+    volume = #fill_here
     
     print('Timestamp: ' + timestamp)
     print('Open Price: ' + open_price)
