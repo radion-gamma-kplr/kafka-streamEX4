@@ -4,10 +4,10 @@ import json
 # Kafka bootstrap servers
 bootstrap_servers = ['localhost:9092']
 
-# Kafka topic to consume data from
+# topic kafka
 topic = 'data-stream'
 
-# Creating a Kafka consumer
+# Creation d'un consumer kafka
 consumer = KafkaConsumer(topic,
                          bootstrap_servers=bootstrap_servers,
                          value_deserializer=lambda m: json.loads(m.decode('utf-8')))
@@ -15,7 +15,7 @@ consumer = KafkaConsumer(topic,
 for message in consumer:
     price_data = message.value
     
-    # Extract the required values
+    # Extraire les valeurs requises
     timestamp = price_data['timestamp']
     open_price = price_data['open']
     high_price = price_data['high']
