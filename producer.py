@@ -29,20 +29,16 @@ while True:
             
             for timestamp, values in time_series.items():
                 # Extraire les valeurs requises
+                #HINT : Aller sur l'url "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo" et examiner les champs des données qu'on veut extraire
                 open_price = values['1. open']
-                high_price = values['2. high']
-                low_price = values['3. low']
-                close_price = values['4. close']
-                volume = values['5. volume']
+                high_price = #fill_here
+                low_price = #fill_here
+                close_price = #fill_here
+                volume = #fill_here
                 
                 # Créer un dictionnaire avec les valeurs extraites
                 price_data = {
-                    'timestamp': timestamp,
-                    'open': open_price,
-                    'high': high_price,
-                    'low': low_price,
-                    'close': close_price,
-                    'volume': volume
+                #fill_here
                 }
                 
                 # Convertir le dictionnaire en JSON et l'envoyer à Kafka
