@@ -1,4 +1,4 @@
-from kafka import KafkaConsumer
+gitfrom kafka import KafkaConsumer
 import json
 
 # Kafka bootstrap servers
